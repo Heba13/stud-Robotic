@@ -9,7 +9,7 @@ ${rejectCookies}  id:onetrust-reject-all-handler
 ${user_MSISDN_field}   id:username
 ${user_Password_field}  id:password
 ${gotoMyAccountButton}   css:input#submitBtn.btn.btn-primary.card-btn.js-btn-submit2
-${dropDown}   xpath:/html/body/vf-root/main/section[1]/vf-nav-bar/nav/div/div[2]/vf-search-engine/div[1]/div[2]
+${dropDown}   xpath://div[@class='search-results desktop-search-results']
 ${searchBar}  id:searchInput
 ${outOfStock}  css:P.variants-options-invalid
 ${div}   div
@@ -20,7 +20,6 @@ Vodafone eShop website opened
      Open Browser   ${url}  ${Browser}
      Maximize Browser Window
      Click Button  ${rejectCookies}
-
 
 user Login Using ${msisdn} And ${password}
     [Arguments]  ${msisdn}  ${password}
@@ -33,13 +32,13 @@ user Login Using ${msisdn} And ${password}
 enter search "${Keyword}" in search bar "${suggestion}"
     [Arguments]  ${Keyword}   ${suggestion}
     input text   ${searchBar}    ${Keyword}
-
+    click on element contain text      ${suggestion}    P
 
 click on the "${suggestion}" form suggestion list
     [Arguments]  ${suggestion}
     Wait Until Element Is Visible    ${dropDown}
     Select From List By Value  ${dropDown}   ${suggestion}
-    click on element contain text      ${suggestion}    ${div}
+    click on element contain text      ${suggestion}    P
 
 click on brand ${brand}
     [Arguments]  ${brand}
@@ -72,9 +71,9 @@ Scroll Into View
 click on element contain text
          [Arguments]    ${text}   ${tag}
          ${textModefied}=   Evaluate  " ${text} "
-
          ${xpath} =     Evaluate  "//${tag}\[text()='${textModefied}']"
          Click Element   xpath:${xpath}
+
 
 click Element By Script
           [Arguments]    ${xpath}
