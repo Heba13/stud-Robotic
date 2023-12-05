@@ -7,6 +7,6 @@ gotoMyAccountButton = "id:submitBtn"
 # Search page elements
 searchBar = "id:searchInput"
 dropDown = "css=div.search-results.desktop-search-results"
-
-msisdn = "01011765365"
-password = "Heb@2013"
+brand="kk"
+userMsisdn = "01011765365"
+userPassword = "Heb@2013"
