@@ -1,0 +1,17 @@
+1701760453754	geckodriver	INFO	Listening on 127.0.0.1:55143
+1701760454279	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55144" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\EmamH\\AppData\\Local\\Temp\\rust_mozprofilewgDFQK"
+console.error: GPOParser.jsm: 
+  Unable to parse JSON for ExtensionSettings
+1701760454641	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1701760454646	Marionette	INFO	Listening on port 55149
+console.error: Policies.jsm: 
+  OfferToSaveLoginsDefault ignored because OfferToSaveLogins is present.
+WebDriver BiDi listening on ws://127.0.0.1:55144
+Read port: 55149
+1701760454872	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\EmamH\\AppData\\Local\\Temp\\rust_mozprofilewgDFQK\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:55144/devtools/browser/e847f397-7e29-4b9c-9e7c-d5b5bd64ccef
+1701760605734	Marionette	INFO	Stopped listening on port 55149
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function

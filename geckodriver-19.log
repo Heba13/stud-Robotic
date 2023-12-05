@@ -1,0 +1,21 @@
+1701761674438	geckodriver	INFO	Listening on 127.0.0.1:56547
+1701761674981	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56548" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\EmamH\\AppData\\Local\\Temp\\rust_mozprofilekrCnco"
+console.error: GPOParser.jsm: 
+  Unable to parse JSON for ExtensionSettings
+1701761675367	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1701761675373	Marionette	INFO	Listening on port 56554
+console.error: Policies.jsm: 
+  OfferToSaveLoginsDefault ignored because OfferToSaveLogins is present.
+Read port: 56554
+WebDriver BiDi listening on ws://127.0.0.1:56548
+1701761675509	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\EmamH\\AppData\\Local\\Temp\\rust_mozprofilekrCnco\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:56548/devtools/browser/1b757e39-1832-4ba1-91ce-3681f4e76853
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2398))
+NetworkHelper.parseSecurityInfo threw an exception: Security state 0 has no known STATE_IS_* flags.
+console.error: "Security state 0 has no known STATE_IS_* flags."
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 572: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 572: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1701762179641	Marionette	INFO	Stopped listening on port 56554
+Dynamically enable window occlusion 1

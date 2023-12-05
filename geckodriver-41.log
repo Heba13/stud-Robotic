@@ -1,0 +1,23 @@
+1701801853867	geckodriver	INFO	Listening on 127.0.0.1:58810
+1701801854389	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58811" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\EmamH\\AppData\\Local\\Temp\\rust_mozprofile0t0Wte"
+console.error: GPOParser.jsm: 
+  Unable to parse JSON for ExtensionSettings
+1701801854823	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1701801854830	Marionette	INFO	Listening on port 58817
+console.error: Policies.jsm: 
+  OfferToSaveLoginsDefault ignored because OfferToSaveLogins is present.
+Read port: 58817
+WebDriver BiDi listening on ws://127.0.0.1:58811
+1701801854989	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\EmamH\\AppData\\Local\\Temp\\rust_mozprofile0t0Wte\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58811/devtools/browser/5e4229e1-cdc7-4f07-ac28-cc2663132e4f
+1701801864304	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+[Parent 23636, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:777
+1701802101396	Marionette	INFO	Stopped listening on port 58817
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function

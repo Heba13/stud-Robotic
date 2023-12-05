@@ -1,0 +1,20 @@
+1701757973417	geckodriver	INFO	Listening on 127.0.0.1:52954
+1701757973975	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52955" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\EmamH\\AppData\\Local\\Temp\\rust_mozprofileftDwPg"
+console.error: GPOParser.jsm: 
+  Unable to parse JSON for ExtensionSettings
+1701757974382	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1701757974387	Marionette	INFO	Listening on port 52967
+console.error: Policies.jsm: 
+  OfferToSaveLoginsDefault ignored because OfferToSaveLogins is present.
+Read port: 52967
+WebDriver BiDi listening on ws://127.0.0.1:52955
+1701757974511	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\EmamH\\AppData\\Local\\Temp\\rust_mozprofileftDwPg\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52955/devtools/browser/0eb19f4d-f3df-43fb-9e54-4318fbf21f1c
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 572: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 572: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1701760120476	Marionette	INFO	Stopped listening on port 52967
+Dynamically enable window occlusion 1

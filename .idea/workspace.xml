@@ -2,13 +2,99 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="292a9f0e-c292-4948-8f2b-278ceb3c17ad" name="Changes" comment="h">
-      <change afterPath="$PROJECT_DIR$/geckodriver-1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-10.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-11.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-12.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-13.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-14.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-15.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-16.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-17.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-18.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-19.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-2.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-20.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-21.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-22.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-23.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-24.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-25.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-26.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-27.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-28.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-29.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-3.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-30.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-31.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-32.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-33.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-34.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-35.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-36.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-37.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-38.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-39.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-4.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-40.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-41.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-42.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-43.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-44.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-45.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-46.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-47.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-48.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-49.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-5.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-50.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-51.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-52.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-53.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-54.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-55.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-56.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-57.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-58.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-59.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-6.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-60.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-7.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-8.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-9.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-26.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-27.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-28.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-29.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-31.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-33.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-screenshot-9.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vodafone/PageObject/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/vodafone/PageObject/locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vodafone/Resources/data.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/data.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vodafone/tests/search.feature" beforeDir="false" afterPath="$PROJECT_DIR$/vodafone/feature/steps/search.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vodafone/feature/steps/search.feature" beforeDir="false" afterPath="$PROJECT_DIR$/vodafone/feature/steps/search.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701684277663</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="h">
+      <created>1701757840158</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701757840159</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

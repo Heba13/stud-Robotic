@@ -1,0 +1,21 @@
+1701802485596	geckodriver	INFO	Listening on 127.0.0.1:59977
+1701802486148	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59978" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\EmamH\\AppData\\Local\\Temp\\rust_mozprofileTMLEG5"
+console.error: GPOParser.jsm: 
+  Unable to parse JSON for ExtensionSettings
+1701802486682	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1701802486694	Marionette	INFO	Listening on port 59986
+console.error: Policies.jsm: 
+  OfferToSaveLoginsDefault ignored because OfferToSaveLogins is present.
+Read port: 59986
+WebDriver BiDi listening on ws://127.0.0.1:59978
+1701802486873	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\EmamH\\AppData\\Local\\Temp\\rust_mozprofileTMLEG5\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59978/devtools/browser/e7079400-ba3c-478e-8f0c-28fc55c98af2
+1701806555395	Marionette	INFO	Stopped listening on port 59986
+Dynamically enable window occlusion 1
+JavaScript error: , line 0: AbortError: A request was aborted, for example through a call to IDBTransaction.abort.
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+!!! error running onStopped callback: TypeError: callback is not a function
+console.error: "Could not write session state file " (new NotReadableError("Could not write chunk (size = 2837) to file C:\\Users\\EmamH\\AppData\\Local\\Temp\\rust_mozprofileTMLEG5\\sessionstore.jsonlz4.tmp. The file may be corrupt.", (void 0))) ""
