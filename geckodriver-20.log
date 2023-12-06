@@ -1,0 +1,17 @@
+1701816223092	geckodriver	INFO	Listening on 127.0.0.1:54022
+1701816223590	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54023" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\EmamH\\AppData\\Local\\Temp\\rust_mozprofileBaNG7i"
+console.error: GPOParser.jsm: 
+  Unable to parse JSON for ExtensionSettings
+1701816224081	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1701816224088	Marionette	INFO	Listening on port 54028
+console.error: Policies.jsm: 
+  OfferToSaveLoginsDefault ignored because OfferToSaveLogins is present.
+Read port: 54028
+WebDriver BiDi listening on ws://127.0.0.1:54023
+1701816224248	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\EmamH\\AppData\\Local\\Temp\\rust_mozprofileBaNG7i\\search.json.mozlz4", (void 0)))
+1701816226584	Marionette	INFO	Stopped listening on port 54028
+Dynamically enable window occlusion 1
+1701816226600	CDP	WARN	Failed to remove undefined (Could not parse path (undefined): NS_ERROR_FILE_UNRECOGNIZED_PATH)
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.jsm", 230))

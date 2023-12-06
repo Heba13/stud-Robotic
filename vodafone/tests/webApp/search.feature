@@ -13,11 +13,10 @@ Feature: search
     When  enter search "<Keyword>" in search bar
     And   click on the "<suggestion>" form suggestion list
     And   click on brand "<brand>"
-    And select the version"<version>"
-    And select color of the product "<color>" and check if the product out of stock "<status>"
+    And   select the version"<version>"
+    And   select color of the product "<color>" and check if the product out of stock "<status>"
 
     Examples:
       |Keyword     |suggestion                |brand|version                         |color      |status |
       | samsung    |Samsung in Smart Phones   |Oppo |   OPPO Smart Phone A98 (5G)    |BLACK      | false |
       | samsung    |Samsung in Smart Phones   |Oppo |   OPPO Smart Phone A98 (5G)    |Dreamy Blue|  true |
-

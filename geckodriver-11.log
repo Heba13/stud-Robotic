@@ -1,0 +1,26 @@
+1701813672013	geckodriver	INFO	Listening on 127.0.0.1:52116
+1701813672580	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52117" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\EmamH\\AppData\\Local\\Temp\\rust_mozprofileLa7Slv"
+console.error: GPOParser.jsm: 
+  Unable to parse JSON for ExtensionSettings
+1701813673571	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1701813673583	Marionette	INFO	Listening on port 52122
+console.error: Policies.jsm: 
+  OfferToSaveLoginsDefault ignored because OfferToSaveLogins is present.
+Read port: 52122
+WebDriver BiDi listening on ws://127.0.0.1:52117
+1701813673801	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\EmamH\\AppData\\Local\\Temp\\rust_mozprofileLa7Slv\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52117/devtools/browser/7e833d79-8372-4a35-b617-c0a3de5ae8d0
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 572: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 572: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1701813954706	Marionette	INFO	Stopped listening on port 52122
+Dynamically enable window occlusion 1
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  CrashMonitor: Writing notifications to file after receiving profile-before-change and awaiting all checkpoints written
+          Phase: IOUtils: waiting for profileBeforeChange IO to complete
+          State: {"profile-after-change":true,"final-ui-startup":true,"sessionstore-windows-restored":true,"quit-application-granted":true,"quit-application":true,"sessionstore-final-state-write-complete":true,"profile-change-net-teardown":true,"profile-change-teardown":true,"profile-before-change":true}
+WARNING: OperationError: Could not move temporary file(C:\Users\EmamH\AppData\Local\Temp\rust_mozprofileLa7Slv\sessionCheckpoints.json.tmp) to destination(C:\Users\EmamH\AppData\Local\Temp\rust_mozprofileLa7Slv\sessionCheckpoints.json)
+WARNING: observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 572: OperationError: Could not move temporary file(C:\Users\EmamH\AppData\Local\Temp\rust_mozprofileLa7Slv\sessionCheckpoints.json.tmp) to destination(C:\Users\EmamH\AppData\Local\Temp\rust_mozprofileLa7Slv\sessionCheckpoints.json)

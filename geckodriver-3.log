@@ -1,0 +1,14 @@
+1701810365450	geckodriver	INFO	Listening on 127.0.0.1:56730
+1701810366004	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56731" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\EmamH\\AppData\\Local\\Temp\\rust_mozprofileMa15Lg"
+console.error: GPOParser.jsm: 
+  Unable to parse JSON for ExtensionSettings
+1701810366762	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1701810366770	Marionette	INFO	Listening on port 56738
+console.error: Policies.jsm: 
+  OfferToSaveLoginsDefault ignored because OfferToSaveLogins is present.
+Read port: 56738
+WebDriver BiDi listening on ws://127.0.0.1:56731
+1701810366986	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\EmamH\\AppData\\Local\\Temp\\rust_mozprofileMa15Lg\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:56731/devtools/browser/7aa9a259-6696-47be-bc80-1b8b56c2bdd7
