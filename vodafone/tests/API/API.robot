@@ -5,14 +5,14 @@ Library     Collections
 *** Variables ***
 ${url}   https://reqres.in/
 ${headers}    Content-Type=application/json
-
+${id}   2
+${name}   morpheus
+${job}    leader
 *** Test Cases ***
 
-Get User Details   2
-Create User       morpheus   leader
-Delete User       ${User_id}
-Get User Details  ${User_id}
-
+Get User Details   ${id}
+Create User         ${name}  ${job}
+Delete A User      ${User_id}
 
 *** Keywords ***
 Get User Details
@@ -33,7 +33,8 @@ Get User Details
     Log    Support Text: ${support['text']}
 
 
-Create User  ${name}  ${job}
+Create User
+    [Arguments]      ${name}  ${job}
     ${data} =   Create Dictionary    name=${name}   job=${job}
     ${response} =    Post Request    ${url}    data=${data}    headers=${headers}
     Log    ${response.content}
@@ -46,8 +47,8 @@ Create User  ${name}  ${job}
     Log    name : ${json_response["name"]}
 
 
-Delete User
-     [Arguments]    ${id}
+Delete A User
+        [Arguments]    ${id}
         ${url} =        Set Variable    ${url}/${id}
         ${response} =   Delete Request  ${url}    headers=${headers}
         Log    ${response.content}
