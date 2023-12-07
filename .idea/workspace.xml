@@ -2,39 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="292a9f0e-c292-4948-8f2b-278ceb3c17ad" name="Changes" comment="edite">
-      <change afterPath="$PROJECT_DIR$/selenium-screenshot-1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver-1.log" beforeDir="false" afterPath="$PROJECT_DIR$/geckodriver-1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver-10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver-11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver-12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver-13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver-14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver-15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver-16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver-17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver-18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver-19.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver-2.log" beforeDir="false" afterPath="$PROJECT_DIR$/geckodriver-2.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver-20.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver-21.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver-22.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver-23.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver-3.log" beforeDir="false" afterPath="$PROJECT_DIR$/geckodriver-3.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver-4.log" beforeDir="false" afterPath="$PROJECT_DIR$/geckodriver-4.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver-5.log" beforeDir="false" afterPath="$PROJECT_DIR$/geckodriver-5.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver-6.log" beforeDir="false" afterPath="$PROJECT_DIR$/geckodriver-6.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver-7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver-8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver-9.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vodafone/tests/webApp/search_step_definitions.robot" beforeDir="false" afterPath="$PROJECT_DIR$/vodafone/tests/webApp/search_step_definitions.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-screenshot-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vodafone/tests/API/API.robot" beforeDir="false" afterPath="$PROJECT_DIR$/vodafone/tests/API/API.robot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +57,7 @@
       <recent name="D:\automation\newProject" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Robot.Get User Details">
     <configuration name="Get User Details" type="RobotRunConfiguration" factoryName="RobotRunConfiguration" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -190,6 +163,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Robot.Get User Details" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -235,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701846961279</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="edite">
+      <created>1701940347145</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701940347145</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

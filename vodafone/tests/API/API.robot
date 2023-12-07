@@ -6,15 +6,17 @@ Library     Collections
 ${url}   https://reqres.in/
 ${headers}    Content-Type=application/json
 ${id}   2
-${name}   morpheus
+${UserName}   morpheus
 ${job}    leader
+
 *** Test Cases ***
 
 Get User Details   ${id}
-Create User         ${name}  ${job}
-Delete A User      ${User_id}
+Create User        ${UserName}  ${job}
+Delete A User      ${id}
 
 *** Keywords ***
+
 Get User Details
     [Arguments]     ${id}
     ${response} =    Get Request    ${url}/${id}    headers=${headers}
@@ -34,17 +36,14 @@ Get User Details
 
 
 Create User
-    [Arguments]      ${name}  ${job}
-    ${data} =   Create Dictionary    name=${name}   job=${job}
-    ${response} =    Post Request    ${url}    data=${data}    headers=${headers}
-    Log    ${response.content}
+    [Arguments]      ${name}   ${job}
+    ${data} =   Create Dictionary    name=  ${name}   job=  ${job}
+    ${response} =    Post Request    ${url}    data= ${data}    headers= ${headers}
+    Log   ${response.content}
     Should Be Equal As Numbers    ${response.status_code}    201
 
     ${json_response} =   Evaluate    json.loads('''${response.content}''')    json
-    Log    ID: ${json_response["id"]}
     ${User_id} =  Set Variable  ${json_response["id"]}
-    Log    Created At: ${json_response["createdAt"]}
-    Log    name : ${json_response["name"]}
 
 
 Delete A User
