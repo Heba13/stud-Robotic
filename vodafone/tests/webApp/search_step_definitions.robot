@@ -34,21 +34,22 @@ When enter search "${Keyword}" in search bar
 
 click on the "${suggestion}" form suggestion list
     [Arguments]  ${suggestion}
-    click on element contain text      ${suggestion}   ${P}
-
+    click Element   xpath://div/P[text()=' ${suggestion} ']
 
 click on brand ${brand}
     [Arguments]  ${brand}
-    click on element contain text    ${brand}   ${div}
+    Wait Until Element Is Visible  xpath://div[text()=' Oppo ']
+     click Element    xpath://div[text()=' Oppo ']
 
 select the version ${version}
    [Arguments]  ${version}
-   scroll into view  ${version}
-   click on element contain text    ${version}   ${P}
+    Scroll Page Down
+    click Element       xpath://div/p[text()=' ${version}  ']
+
 
 select color of the product ${color} and check if the product out of stock ${status}
    [Arguments]   ${color}  ${status}
-   ${colorIcon}   Set Variable  xpath://button[@class='${color}']
+   ${colorIcon}   Set Variable  xpath://button[@title='${color}']
    click Element  ${colorIcon}
    Should Be True    ${condition}   msg=Condition is not true
    ${actual_value}    Does Page Contain Link    ${outOfStock}
@@ -57,26 +58,18 @@ select color of the product ${color} and check if the product out of stock ${sta
 *** Keywords ***
 
 Scroll Into View
-          [Arguments]    ${text}
-          ${textModefied}=   Evaluate  " ${text} "
-          ${xpath} =     Evaluate  "//div[text()='${textModefied}']"
-          ${element} =    Get WebElement    xpath:${xpath}
+          [Arguments]    ${xpath}
+          ${element} =    Get WebElement    ${xpath}
           Execute JavaScript    arguments[0].scrollIntoView(true)    ${element}
 
 click on element contain text
          [Arguments]    ${text}   ${tag}
          ${textModefied}=   Evaluate  " ${text} "
          ${xpath} =     Evaluate  "//${tag}\[text()='${textModefied}']"
-         click Element By Script   ${xpath}
+         click Element    ${xpath}
 
 
 click Element By Script
           [Arguments]    ${xpath}
-          ${element} =    Get WebElement    xpath:${xpath}
+          ${element} =    Get WebElement   ${xpath}
           Execute JavaScript    arguments[0].click()    ${element}
-
-
-
-
-
-
