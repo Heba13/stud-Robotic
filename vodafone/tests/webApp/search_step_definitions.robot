@@ -41,12 +41,10 @@ click on brand ${brand}
     Wait Until Element Is Visible  xpath://div[text()=' Oppo ']
      click Element    xpath://div[text()=' Oppo ']
 
-
 select the version ${version}
    [Arguments]  ${version}
-    ${element}=  Get WebElement    xpath:/html/body/vf-root/main/section[2]/vf-product-list-page/div[2]/div[2]/div[4]/vf-product-box-featured[1]/div/div[3]/div/div[2]/div/div
+    ${element}  = SeleniumLibrary.Get WebElement  css:h5.offer-price
     Execute JavaScript    arguments[0].scrollIntoView(true);    ${element}
-
 
 select color of the product ${color} and check if the product out of stock ${status}
    [Arguments]   ${color}  ${status}
@@ -67,7 +65,6 @@ click on element contain text
          ${textModefied}=   Evaluate  " ${text} "
          ${xpath} =     Evaluate  "//${tag}\[text()='${textModefied}']"
          click Element    ${xpath}
-
 
 click Element By Script
           [Arguments]    ${xpath}

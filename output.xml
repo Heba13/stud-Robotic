@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.9.5 on win32)" generated="20231206 19:52:52.157" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.9.5 on win32)" generated="20231207 04:15:35.492" rpa="false" schemaversion="4">
 <suite id="s1" name="Search" source="D:\automation\newProject\vodafone\tests\webApp\search.robot">
-<test id="s1-t1" name="Example Test Case 1" line="22">
+<test id="s1-t1" name="Example Test Case 1" line="21">
 <kw name="Scenario Outline:customer can search product in stock and choose it's color">
 <arg>${SearchKeyword}</arg>
 <arg>${suggestionKey}</arg>
@@ -14,92 +14,67 @@
 <arg>${url}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231206 19:52:52.647" level="INFO">Opening browser 'Firefox' to base url 'https://eshop.vodafone.com.eg/en'.</msg>
-<status status="PASS" starttime="20231206 19:52:52.647" endtime="20231206 19:53:08.847"/>
+<msg timestamp="20231207 04:15:35.688" level="INFO">Opening browser 'Firefox' to base url 'https://eshop.vodafone.com.eg/en'.</msg>
+<status status="PASS" starttime="20231207 04:15:35.687" endtime="20231207 04:15:44.788"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231206 19:53:08.847" endtime="20231206 19:53:09.116"/>
+<status status="PASS" starttime="20231207 04:15:44.789" endtime="20231207 04:15:45.052"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${rejectCookies}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20231206 19:53:09.119" level="INFO">Clicking button 'id:onetrust-reject-all-handler'.</msg>
-<status status="PASS" starttime="20231206 19:53:09.117" endtime="20231206 19:53:09.607"/>
+<msg timestamp="20231207 04:15:45.054" level="INFO">Clicking button 'id:onetrust-reject-all-handler'.</msg>
+<msg timestamp="20231207 04:15:45.530" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231207 04:15:45.530" level="FAIL">ElementNotInteractableException: Message: Element &lt;button id="onetrust-reject-all-handler" class="teal-binded"&gt; could not be scrolled into view
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:180:5
+ElementNotInteractableError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:290:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:150:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:119:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:198:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:86:31
+</msg>
+<status status="FAIL" starttime="20231207 04:15:45.052" endtime="20231207 04:15:45.536"/>
 </kw>
-<status status="PASS" starttime="20231206 19:52:52.647" endtime="20231206 19:53:09.608"/>
+<status status="FAIL" starttime="20231207 04:15:35.687" endtime="20231207 04:15:45.536"/>
 </kw>
 <kw name="When enter search &quot;${Keyword}&quot; in search bar" library="search_step_definitions" sourcename="When enter search &quot;${Keyword}&quot; in search bar">
 <arg>${Keyword}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${searchBar}</arg>
-<arg>${Keyword}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231206 19:53:09.614" level="INFO">Typing text 'Samsung In Smart Phone' into text field 'id:searchInput'.</msg>
-<status status="PASS" starttime="20231206 19:53:09.610" endtime="20231206 19:53:10.976"/>
-</kw>
-<status status="PASS" starttime="20231206 19:53:09.608" endtime="20231206 19:53:10.976"/>
+<status status="NOT RUN" starttime="20231207 04:15:45.536" endtime="20231207 04:15:45.536"/>
 </kw>
 <kw name="And click on the &quot;${suggestion}&quot; form suggestion list" library="search_step_definitions" sourcename="click on the &quot;${suggestion}&quot; form suggestion list">
 <arg>${suggestion}</arg>
-<kw name="click on element contain text" library="search_step_definitions">
-<arg>${suggestion}</arg>
-<arg>${P}</arg>
-<kw name="Evaluate" library="BuiltIn">
-<var>${textModefied}</var>
-<arg>" ${text} "</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20231206 19:53:10.979" level="INFO">${textModefied} =  In Smart Phones </msg>
-<status status="PASS" starttime="20231206 19:53:10.978" endtime="20231206 19:53:10.979"/>
-</kw>
-<kw name="Evaluate" library="BuiltIn">
-<var>${xpath}</var>
-<arg>"//${tag}\[text()='${textModefied}']"</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20231206 19:53:10.980" level="INFO">${xpath} = //P[text()=' In Smart Phones ']</msg>
-<status status="PASS" starttime="20231206 19:53:10.980" endtime="20231206 19:53:10.980"/>
-</kw>
-<kw name="click Element By Script" library="search_step_definitions">
-<arg>${xpath}</arg>
-<kw name="Get WebElement" library="SeleniumLibrary">
-<var>${element}</var>
-<arg>xpath:${xpath}</arg>
-<doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20231206 19:53:11.024" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="72fc048c-3248-465a-9b86-38bf2d5a8198", element="71019d4b-6991-4de0-ad6e-37063adf0287")&gt;</msg>
-<status status="PASS" starttime="20231206 19:53:10.981" endtime="20231206 19:53:11.024"/>
-</kw>
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>arguments[0].click()</arg>
-<arg>${element}</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20231206 19:53:11.348" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-36.png"&gt;&lt;img src="selenium-screenshot-36.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20231206 19:53:11.348" level="FAIL">TypeError: sequence item 1: expected str instance, WebElement found</msg>
-<status status="FAIL" starttime="20231206 19:53:11.024" endtime="20231206 19:53:11.351"/>
-</kw>
-<status status="FAIL" starttime="20231206 19:53:10.981" endtime="20231206 19:53:11.351"/>
-</kw>
-<status status="FAIL" starttime="20231206 19:53:10.977" endtime="20231206 19:53:11.351"/>
-</kw>
-<status status="FAIL" starttime="20231206 19:53:10.976" endtime="20231206 19:53:11.351"/>
+<status status="NOT RUN" starttime="20231207 04:15:45.537" endtime="20231207 04:15:45.537"/>
 </kw>
 <kw name="And click on brand ${brand}" library="search_step_definitions" sourcename="click on brand ${brand}">
 <arg>${brand}</arg>
-<status status="NOT RUN" starttime="20231206 19:53:11.351" endtime="20231206 19:53:11.351"/>
+<status status="NOT RUN" starttime="20231207 04:15:45.537" endtime="20231207 04:15:45.537"/>
 </kw>
 <kw name="And select the version ${version}" library="search_step_definitions" sourcename="select the version ${version}">
 <arg>${version}</arg>
-<status status="NOT RUN" starttime="20231206 19:53:11.351" endtime="20231206 19:53:11.351"/>
+<status status="NOT RUN" starttime="20231207 04:15:45.537" endtime="20231207 04:15:45.538"/>
 </kw>
 <kw name="And select color of the product ${color} and check if the product out of stock ${status}" library="search_step_definitions" sourcename="select color of the product ${color} and check if the product out of stock ${status}">
 <arg>${color}</arg>
 <arg>${status}</arg>
-<status status="NOT RUN" starttime="20231206 19:53:11.351" endtime="20231206 19:53:11.351"/>
+<status status="NOT RUN" starttime="20231207 04:15:45.538" endtime="20231207 04:15:45.538"/>
 </kw>
-<status status="FAIL" starttime="20231206 19:52:52.646" endtime="20231206 19:53:11.351"/>
+<status status="FAIL" starttime="20231207 04:15:35.686" endtime="20231207 04:15:45.538"/>
 </kw>
-<status status="FAIL" starttime="20231206 19:52:52.645" endtime="20231206 19:53:11.354">TypeError: sequence item 1: expected str instance, WebElement found</status>
+<status status="FAIL" starttime="20231207 04:15:35.683" endtime="20231207 04:15:45.539">ElementNotInteractableException: Message: Element &lt;button id="onetrust-reject-all-handler" class="teal-binded"&gt; could not be scrolled into view
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:180:5
+ElementNotInteractableError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:290:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:150:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:119:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:198:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:86:31
+</status>
 </test>
-<test id="s1-t2" name="Example Test Case 2" line="27">
+<test id="s1-t2" name="Example Test Case 2" line="26">
 <kw name="Scenario Outline:customer can search product in stock and choose it's color">
 <arg>${SearchKeyword}</arg>
 <arg>${suggestionKey}</arg>
@@ -112,20 +87,20 @@
 <arg>${url}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231206 19:53:11.358" level="INFO">Opening browser 'Firefox' to base url 'https://eshop.vodafone.com.eg/en'.</msg>
-<status status="PASS" starttime="20231206 19:53:11.358" endtime="20231206 19:53:22.735"/>
+<msg timestamp="20231207 04:15:45.550" level="INFO">Opening browser 'Firefox' to base url 'https://eshop.vodafone.com.eg/en'.</msg>
+<status status="PASS" starttime="20231207 04:15:45.549" endtime="20231207 04:15:55.922"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231206 19:53:22.735" endtime="20231206 19:53:23.256"/>
+<status status="PASS" starttime="20231207 04:15:55.922" endtime="20231207 04:15:56.192"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${rejectCookies}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20231206 19:53:23.259" level="INFO">Clicking button 'id:onetrust-reject-all-handler'.</msg>
-<status status="PASS" starttime="20231206 19:53:23.257" endtime="20231206 19:53:24.148"/>
+<msg timestamp="20231207 04:15:56.194" level="INFO">Clicking button 'id:onetrust-reject-all-handler'.</msg>
+<status status="PASS" starttime="20231207 04:15:56.193" endtime="20231207 04:15:56.718"/>
 </kw>
-<status status="PASS" starttime="20231206 19:53:11.358" endtime="20231206 19:53:24.149"/>
+<status status="PASS" starttime="20231207 04:15:45.548" endtime="20231207 04:15:56.719"/>
 </kw>
 <kw name="When enter search &quot;${Keyword}&quot; in search bar" library="search_step_definitions" sourcename="When enter search &quot;${Keyword}&quot; in search bar">
 <arg>${Keyword}</arg>
@@ -133,73 +108,72 @@
 <arg>${searchBar}</arg>
 <arg>${Keyword}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231206 19:53:24.158" level="INFO">Typing text 'Samsung In Smart Phone' into text field 'id:searchInput'.</msg>
-<status status="PASS" starttime="20231206 19:53:24.154" endtime="20231206 19:53:25.751"/>
+<msg timestamp="20231207 04:15:56.726" level="INFO">Typing text 'Samsung Smart Phone' into text field 'id:searchInput'.</msg>
+<status status="PASS" starttime="20231207 04:15:56.724" endtime="20231207 04:15:57.845"/>
 </kw>
-<status status="PASS" starttime="20231206 19:53:24.150" endtime="20231206 19:53:25.751"/>
+<status status="PASS" starttime="20231207 04:15:56.720" endtime="20231207 04:15:57.846"/>
 </kw>
 <kw name="And click on the &quot;${suggestion}&quot; form suggestion list" library="search_step_definitions" sourcename="click on the &quot;${suggestion}&quot; form suggestion list">
 <arg>${suggestion}</arg>
-<kw name="click on element contain text" library="search_step_definitions">
-<arg>${suggestion}</arg>
-<arg>${P}</arg>
-<kw name="Evaluate" library="BuiltIn">
-<var>${textModefied}</var>
-<arg>" ${text} "</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20231206 19:53:25.757" level="INFO">${textModefied} =  In Smart Phones </msg>
-<status status="PASS" starttime="20231206 19:53:25.755" endtime="20231206 19:53:25.757"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://div/P[text()=' ${suggestion} ']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231207 04:15:57.848" level="INFO">Clicking element 'xpath://div/P[text()=' In Smart Phones ']'.</msg>
+<status status="PASS" starttime="20231207 04:15:57.847" endtime="20231207 04:15:58.327"/>
 </kw>
-<kw name="Evaluate" library="BuiltIn">
-<var>${xpath}</var>
-<arg>"//${tag}\[text()='${textModefied}']"</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20231206 19:53:25.760" level="INFO">${xpath} = //P[text()=' In Smart Phones ']</msg>
-<status status="PASS" starttime="20231206 19:53:25.758" endtime="20231206 19:53:25.760"/>
-</kw>
-<kw name="click Element By Script" library="search_step_definitions">
-<arg>${xpath}</arg>
-<kw name="Get WebElement" library="SeleniumLibrary">
-<var>${element}</var>
-<arg>xpath:${xpath}</arg>
-<doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20231206 19:53:25.884" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="eeac89c4-9731-4df7-bd54-5f7e9f385730", element="07aa68e0-37b8-461d-95c1-62640c65813f")&gt;</msg>
-<status status="PASS" starttime="20231206 19:53:25.761" endtime="20231206 19:53:25.884"/>
-</kw>
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>arguments[0].click()</arg>
-<arg>${element}</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20231206 19:53:26.309" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-37.png"&gt;&lt;img src="selenium-screenshot-37.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20231206 19:53:26.309" level="FAIL">TypeError: sequence item 1: expected str instance, WebElement found</msg>
-<status status="FAIL" starttime="20231206 19:53:25.885" endtime="20231206 19:53:26.314"/>
-</kw>
-<status status="FAIL" starttime="20231206 19:53:25.760" endtime="20231206 19:53:26.314"/>
-</kw>
-<status status="FAIL" starttime="20231206 19:53:25.752" endtime="20231206 19:53:26.314"/>
-</kw>
-<status status="FAIL" starttime="20231206 19:53:25.751" endtime="20231206 19:53:26.314"/>
+<status status="PASS" starttime="20231207 04:15:57.846" endtime="20231207 04:15:58.328"/>
 </kw>
 <kw name="And click on brand ${brand}" library="search_step_definitions" sourcename="click on brand ${brand}">
 <arg>${brand}</arg>
-<status status="NOT RUN" starttime="20231206 19:53:26.314" endtime="20231206 19:53:26.314"/>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://div[text()=' Oppo ']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231207 04:15:58.329" endtime="20231207 04:15:58.791"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://div[text()=' Oppo ']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231207 04:15:58.793" level="INFO">Clicking element 'xpath://div[text()=' Oppo ']'.</msg>
+<status status="PASS" starttime="20231207 04:15:58.791" endtime="20231207 04:15:59.268"/>
+</kw>
+<status status="PASS" starttime="20231207 04:15:58.328" endtime="20231207 04:15:59.269"/>
 </kw>
 <kw name="And select the version ${version}" library="search_step_definitions" sourcename="select the version ${version}">
 <arg>${version}</arg>
-<status status="NOT RUN" starttime="20231206 19:53:26.315" endtime="20231206 19:53:26.315"/>
+<kw name="= SeleniumLibrary.Get WebElement">
+<var>${element}</var>
+<arg>css:h5.offer-price</arg>
+<msg timestamp="20231207 04:15:59.276" level="FAIL">No keyword with name '= SeleniumLibrary.Get WebElement' found. Did you mean:
+    SeleniumLibrary.Get WebElement
+    SeleniumLibrary.Get WebElements
+    SeleniumLibrary.Get Element Size
+    SeleniumLibrary.Get Element Count</msg>
+<status status="FAIL" starttime="20231207 04:15:59.276" endtime="20231207 04:15:59.276"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>arguments[0].scrollIntoView(true);</arg>
+<arg>${element}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20231207 04:15:59.276" endtime="20231207 04:15:59.276"/>
+</kw>
+<status status="FAIL" starttime="20231207 04:15:59.269" endtime="20231207 04:15:59.276"/>
 </kw>
 <kw name="And select color of the product ${color} and check if the product out of stock ${status}" library="search_step_definitions" sourcename="select color of the product ${color} and check if the product out of stock ${status}">
 <arg>${color}</arg>
 <arg>${status}</arg>
-<status status="NOT RUN" starttime="20231206 19:53:26.315" endtime="20231206 19:53:26.315"/>
+<status status="NOT RUN" starttime="20231207 04:15:59.276" endtime="20231207 04:15:59.276"/>
 </kw>
-<status status="FAIL" starttime="20231206 19:53:11.358" endtime="20231206 19:53:26.315"/>
+<status status="FAIL" starttime="20231207 04:15:45.546" endtime="20231207 04:15:59.278"/>
 </kw>
-<status status="FAIL" starttime="20231206 19:53:11.357" endtime="20231206 19:53:26.315">TypeError: sequence item 1: expected str instance, WebElement found</status>
+<status status="FAIL" starttime="20231207 04:15:45.543" endtime="20231207 04:15:59.278">No keyword with name '= SeleniumLibrary.Get WebElement' found. Did you mean:
+    SeleniumLibrary.Get WebElement
+    SeleniumLibrary.Get WebElements
+    SeleniumLibrary.Get Element Size
+    SeleniumLibrary.Get Element Count</status>
 </test>
 <meta name="Feature">search</meta>
 <meta name="Generated by">_gherkin2robotframework on 2023-12-04T14:10:51.111287_</meta>
-<status status="FAIL" starttime="20231206 19:52:52.170" endtime="20231206 19:53:26.317"/>
+<status status="FAIL" starttime="20231207 04:15:35.495" endtime="20231207 04:15:59.282"/>
 </suite>
 <statistics>
 <total>
