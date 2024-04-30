@@ -27,8 +27,7 @@ robot tests/
 Replace tests/ with the path to the directory containing your test cases.
 Monitor the test execution in the console. Upon completion, a detailed test report will be generated in HTML format, located in the results directory.
 Folder Structure
-tests/: Contains the test cases written in Robot Framework format.
-config/: Configuration files for test data and environment settings.
-results/: Stores the generated test reports and logs.
-resources/: Additional resources such as test data files or reusable keywords.
-Contributing
+RobotFramework/vodafone/tests/webApp/search.feature: Contains the test cases written in jerkin .
+RobotFramework/vodafone/tests/webApp/search.robot : Contains the implementation for variable and Scenarios written in python.
+vodafone/tests/webApp/search_step_definitions.robot : Contains the test cases  implementation written in python
+
