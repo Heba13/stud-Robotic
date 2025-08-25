@@ -2,9 +2,9 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${PROFILE_ICON}        xpath=//header//div[contains(@class,'profile-icon')]
-${REGISTER_BTN}        css=button.register-btn
-${LOGIN_BTN}           css=button.login-btn
+${PROFILE_ICON}        css=button.account-setting-active
+${REGISTER_BTN_HEADER}  xpath=(//a[normalize-space()='Register'])[1]
+${LOGIN_BTN}           css=button[class='w-100 my-3 submit-btn']
 ${LOGOUT_BTN}          css=button.logout-btn
 ${CART_ICON}           css=div.cart-icon
 ${PRODUCTS_TAB}        css=li.products-tab
@@ -15,8 +15,8 @@ ${CART_COUNT}          css=span.cart-count
 Click Profile Icon
     Click Element    ${PROFILE_ICON}
 
-Click Register Button
-    Click Element    ${REGISTER_BTN}
+Click Register Button in Header
+    Click Button    ${REGISTER_BTN_HEADER}
 
 Click Login Button
     Click Element    ${LOGIN_BTN}

@@ -45,4 +45,4 @@ Enter Contact Number
     Input Text    ${CONTACT_INPUT}    ${contact}
 
 Click Register Button
-    Click Button    ${REGISTER_BUTTON}
+    Click Button   ${REGISTER_BUTTON}

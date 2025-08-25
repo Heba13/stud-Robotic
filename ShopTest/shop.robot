@@ -1,7 +1,7 @@
 *** Settings ***
-Library    SeleniumLibrary
-Library    Collections
-Library    RequestsLibrary
+Library     SeleniumLibrary
+Library     Collections
+Library     RequestsLibrary
 Resource   resources/pages/LoginPage.robot
 Resource   resources/pages/register.robot
 Resource   resources/pages/header.robot
@@ -39,7 +39,7 @@ Open Browser To Shop
 Sign Up Template
     [Arguments]    ${userName}  ${password}  ${email}  ${gender}  ${address}  ${contact}  ${products}  ${successMessage}
     Click Profile Icon
-    Click Register Button
+    Click Register Button in Header
     Enter Username    ${userName}
     Enter Password    ${password}
     Enter Email       ${email}
