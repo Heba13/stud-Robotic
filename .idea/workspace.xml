@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="292a9f0e-c292-4948-8f2b-278ceb3c17ad" name="Changes" comment="edite" />
+    <list default="true" id="292a9f0e-c292-4948-8f2b-278ceb3c17ad" name="Changes" comment="edite">
+      <change afterPath="$PROJECT_DIR$/ShopTest/output.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopTest/resources/pages/Home.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopTest/resources/pages/LoginPage.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopTest/resources/pages/Products.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopTest/resources/pages/cart.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopTest/resources/pages/header.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopTest/resources/pages/order.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopTest/resources/pages/register.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopTest/resources/variables.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopTest/selenium-screenshot-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopTest/selenium-screenshot-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopTest/selenium-screenshot-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopTest/selenium-screenshot-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopTest/selenium-screenshot-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopTest/selenium-screenshot-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopTest/shop.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver-1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vodafone/tests/API/API.robot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vodafone/tests/webApp/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/ShopTest/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vodafone/tests/webApp/output.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vodafone/tests/webApp/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/ShopTest/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vodafone/tests/webApp/search.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vodafone/tests/webApp/search.robot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vodafone/tests/webApp/search_step_definitions.robot" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,29 +57,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/automation/newProject&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/mobile/RobotFramework/ShopTest",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\mobile\RobotFramework\ShopTest" />
       <recent name="D:\automation\newProject\vodafone\tests\webApp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\mobile\RobotFramework\ShopTest" />
+      <recent name="D:\mobile\RobotFramework\vodafone\resources\pages" />
       <recent name="D:\automation\newProject\vodafone\tests" />
       <recent name="D:\automation\newProject\vodafone\feature\steps" />
       <recent name="D:\automation\newProject" />
     </key>
   </component>
-  <component name="RunManager" selected="Robot.Get User Details">
+  <component name="RunManager" selected="Robot.Valid Login Scenario">
     <configuration name="Get User Details" type="RobotRunConfiguration" factoryName="RobotRunConfiguration" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -65,6 +97,27 @@
       <module name="" />
       <option name="SCRIPT_NAME" value="robot.run" />
       <option name="PARAMETERS" value="--test &quot;newProject.vodafone.tests.API.API.Get User Details&quot; ." />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Valid Login Scenario" type="RobotRunConfiguration" factoryName="RobotRunConfiguration" temporary="true">
+      <module name="RobotFramework" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\automation\newProject\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="robot.run" />
+      <option name="PARAMETERS" value="--test &quot;RobotFramework.vodafone.tests.login_tests.Valid Login Scenario&quot; ." />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="true" />
       <option name="MODULE_MODE" value="true" />
@@ -114,27 +167,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="customer can search product in stock and choose it's color example" type="RobotRunConfiguration" factoryName="RobotRunConfiguration" temporary="true">
-      <module name="newProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="robot.run" />
-      <option name="PARAMETERS" value="--test &quot;newProject.vodafone.feature.steps.search.customer can search product in stock and choose it's color example&quot; ." />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="true" />
-      <option name="MODULE_MODE" value="true" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="search.robot" type="RobotRunConfiguration" factoryName="RobotRunConfiguration" temporary="true">
       <module name="newProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -158,6 +190,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Robot.Valid Login Scenario" />
         <item itemvalue="Robot.Get User Details" />
       </list>
     </recent_temporary>
