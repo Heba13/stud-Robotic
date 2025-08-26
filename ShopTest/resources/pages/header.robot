@@ -2,20 +2,22 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${PROFILE_ICON}        css=button.account-setting-active
-${REGISTER_BTN_HEADER}  xpath=(//a[normalize-space()='Register'])[1]
-${LOGIN_BTN}           css=button[class='w-100 my-3 submit-btn']
-${LOGOUT_BTN}          css=button.logout-btn
+${PROFILE_ICON}        css=.account-setting-active
+${REGISTER_BTN_HEADER}  xpath=//div[@class="account-dropdown active"]/ul/li[2]
+${LOGIN_BTN}           css=a[href='/login']
+${LOGOUT_BTN}          xpath=//div[@class='account-dropdown active']//li[contains(text(),'Logout')]
 ${CART_ICON}           css=div.cart-icon
-${PRODUCTS_TAB}        css=li.products-tab
-${VIEW_CART_BTN}       css=button.view-cart-btn
-${CART_COUNT}          css=span.cart-count
+${PRODUCTS_TAB}        css=a[href='/shop-grid-standard']
+${VIEW_CART_BTN}       css=//a[@href='/cart']
+${CART_COUNT}          css=span[class='count-style]
 
 *** Keywords ***
 Click Profile Icon
+
     Click Element    ${PROFILE_ICON}
 
 Click Register Button in Header
+    Wait Until Element Is Visible    ${REGISTER_BTN_HEADER}    30s
     Click Button    ${REGISTER_BTN_HEADER}
 
 Click Login Button
@@ -38,3 +40,4 @@ Click Products Tab
 
 Get Cart Count
     [Return]    Get Text    ${CART_COUNT}
+

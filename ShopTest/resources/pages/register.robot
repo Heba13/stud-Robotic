@@ -12,6 +12,7 @@ ${SECOND_ADDRESS}      css=input[id='address2']
 ${CONTACT_INPUT}       css=input[id='contact']
 ${REGISTER_BUTTON}     css=button.w-100.submit-btn.my-3
 
+
 *** Keywords ***
 Get Page Headline
     [Return]    ${PAGE_HEADLINE}

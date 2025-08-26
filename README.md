@@ -1,6 +1,7 @@
 # AutomationProject 
 # Overview
-This project aims to automate the testing of Web Application using the Robot Framework, a keyword-driven test automation framework. By leveraging the Robot Framework's simplicity and flexibility, we can create robust and maintainable test suites to ensure the quality and reliability of our software.
+This project aims to automate the testing of Web Application using the Robot Framework, a keyword-driven test automation framework.
+By leveraging the Robot Framework's simplicity and flexibility, we can create robust and maintainable test suites to ensure the quality and reliability of our software.
 
 # Prerequisites
 Before running the automated tests, ensure that the following prerequisites are met:
@@ -11,6 +12,7 @@ Before running the automated tests, ensure that the following prerequisites are 
 - Copy code
 - pip install robotframework
 - pip install robotframework-seleniumlibrary  
+- pip install robotframework-requests
 
 # Getting Started
 To get started with running the automated tests, follow these steps:
@@ -23,11 +25,10 @@ git clone https://github.com/Heba13/RobotFramework
 Execute the test suite using the robot command:
 bash
 Copy code
-robot tests/
-Replace tests/ with the path to the directory containing your test cases.
+robot  ShopTest/shop.robot  
+
 Monitor the test execution in the console. Upon completion, a detailed test report will be generated in HTML format, located in the results directory.
 Folder Structure
-RobotFramework/vodafone/tests/webApp/search.feature: Contains the test cases written in jerkin .
-RobotFramework/vodafone/tests/webApp/search.robot : Contains the implementation for variable and Scenarios written in python.
-vodafone/tests/webApp/search_step_definitions.robot : Contains the test cases  implementation written in python
+RobotFramework/ShopTest/shop.robot:Contains the implementation for variable and Scenarios written in python.
+robot ShopTest/resources/pages : Contains pages of web APP
 

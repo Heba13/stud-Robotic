@@ -4,16 +4,16 @@ Library    SeleniumLibrary
 *** Variables ***
 ${EMAIL_INPUT}         css=input[name='email']
 ${PASSWORD_INPUT}      css=input[id='password']
-${LOGIN_BUTTON}        css=button.w-100.my-3.submit-btn
+${LOGIN_BUTTON}        css=button[class='w-100 my-3 submit-btn']
 
 *** Keywords ***
-Enter Email
+Enter Login Email
     [Arguments]    ${email}
     Input Text    ${EMAIL_INPUT}    ${email}
 
-Enter Password
+Enter Login Password
     [Arguments]    ${password}
     Input Text    ${PASSWORD_INPUT}    ${password}
 
-Click Login
+Click Login in login page
     Click Button    ${LOGIN_BUTTON}

@@ -60,7 +60,7 @@ Purchase Products Template
     Click Login Button
     Enter Login Email       ${email}
     Enter Login Password    ${password}
-    Click Login
+    Click Login in login page
     Click Profile Icon
     Logout Button Should Be Visible
     Click Products Tab

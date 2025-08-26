@@ -9,7 +9,7 @@ ${REGION_SELECT}      css=select[name='rcrs-region']
 ${PHONE_INPUT}        css=input[name='contact']
 ${POSTAL_CODE}        css=input[name='postalcode']
 ${CASH_CHECKBOX}      css=input[type='checkbox']
-${CONFIRM_BTN}        css=button.btn-hover
+${CONFIRM_BTN}        css=button[class='btn-hover']
 
 *** Keywords ***
 Click Checkout

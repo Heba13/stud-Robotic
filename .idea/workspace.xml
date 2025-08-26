@@ -2,31 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="292a9f0e-c292-4948-8f2b-278ceb3c17ad" name="Changes" comment="edit">
-      <change afterPath="$PROJECT_DIR$/ShopTest/log.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShopTest/output.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShopTest/report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShopTest/selenium-screenshot-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShopTest/selenium-screenshot-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShopTest/selenium-screenshot-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShopTest/selenium-screenshot-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShopTest/selenium-screenshot-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShopTest/selenium-screenshot-6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShopTest/selenium-screenshot-7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-screenshot-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-screenshot-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-screenshot-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-screenshot-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-screenshot-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-screenshot-6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-screenshot-7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-screenshot-8.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopTest/resources/pages/Home.robot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopTest/resources/pages/LoginPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/ShopTest/resources/pages/LoginPage.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopTest/resources/pages/Products.robot" beforeDir="false" afterPath="$PROJECT_DIR$/ShopTest/resources/pages/Products.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopTest/resources/pages/cart.robot" beforeDir="false" afterPath="$PROJECT_DIR$/ShopTest/resources/pages/cart.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShopTest/resources/pages/header.robot" beforeDir="false" afterPath="$PROJECT_DIR$/ShopTest/resources/pages/header.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShopTest/resources/pages/register.robot" beforeDir="false" afterPath="$PROJECT_DIR$/ShopTest/resources/pages/register.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopTest/selenium-screenshot-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopTest/selenium-screenshot-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopTest/selenium-screenshot-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopTest/selenium-screenshot-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopTest/selenium-screenshot-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopTest/selenium-screenshot-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopTest/selenium-screenshot-7.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ShopTest/shop.robot" beforeDir="false" afterPath="$PROJECT_DIR$/ShopTest/shop.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-screenshot-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-screenshot-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-screenshot-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-screenshot-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-screenshot-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-screenshot-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-screenshot-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-screenshot-8.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,18 +56,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/mobile/RobotFramework/ShopTest",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/mobile/RobotFramework/ShopTest&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\mobile\RobotFramework\ShopTest" />

@@ -3,9 +3,12 @@ Library    SeleniumLibrary
 
 *** Variables ***
 ${APPLY_BTN}          css=button[type='button']
-${PRODUCT_PRICE}      css=div.product-details-price span
-${ADD_TO_CART_BTN}    css=div.pro-details-cart.btn-hover button
+${PRODUCT_PRICE}      css=div[class='product-details-price'] span
+${ADD_TO_CART_BTN}    css=div[class='pro-details-cart btn-hover'] button
 
+
+#    private final By pageHeadline = By.cssSelector("span[to='/shop-grid-standard']");
+#    private final By  messages = By.cssSelector("div[class='react-toast-notifications__toast__content css-1ad3zal']");
 *** Keywords ***
 Select Category
     [Arguments]    ${category}

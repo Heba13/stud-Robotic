@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.9.5 on win32)" generated="20250825 23:25:54.132" rpa="false" schemaversion="4">
-<suite id="s1" name="RobotFramework" source="D:\mobile\RobotFramework">
-<suite id="s1-s1" name="ShopTest" source="D:\mobile\RobotFramework\ShopTest">
-<suite id="s1-s1-s1" name="Shop" source="D:\mobile\RobotFramework\ShopTest\shop.robot">
+<robot generator="Robot 6.1.1 (Python 3.9.5 on win32)" generated="20250826 11:22:16.596" rpa="false" schemaversion="4">
+<suite id="s1" name="Shop" source="D:\mobile\RobotFramework\ShopTest\shop.robot">
 <kw name="Open Browser To Shop" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${BASE_URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20250825 23:25:54.921" level="INFO">Opening browser 'Chrome' to base url 'https://practice-react.sdetunicorns.com/'.</msg>
-<status status="PASS" starttime="20250825 23:25:54.920" endtime="20250825 23:26:08.541"/>
+<msg timestamp="20250826 11:22:16.956" level="INFO">Opening browser 'Chrome' to base url 'https://practice-react.sdetunicorns.com/'.</msg>
+<status status="PASS" starttime="20250826 11:22:16.955" endtime="20250826 11:22:29.058"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20250825 23:26:08.541" endtime="20250825 23:26:08.611"/>
+<status status="PASS" starttime="20250826 11:22:29.058" endtime="20250826 11:22:29.129"/>
 </kw>
-<status status="PASS" starttime="20250825 23:25:54.918" endtime="20250825 23:26:08.612"/>
+<status status="PASS" starttime="20250826 11:22:16.955" endtime="20250826 11:22:29.129"/>
 </kw>
-<test id="s1-s1-s1-t1" name="User Can Sign Up New User Account" line="20">
+<test id="s1-t1" name="User Can Sign Up New User Account" line="20">
 <kw name="Sign Up Template">
 <arg>Admin</arg>
 <arg>Admin1234</arg>
@@ -31,72 +29,78 @@
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${PROFILE_ICON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20250825 23:26:08.634" level="INFO">Clicking element 'css=button.account-setting-active'.</msg>
-<status status="PASS" starttime="20250825 23:26:08.622" endtime="20250825 23:26:08.836"/>
+<msg timestamp="20250826 11:22:29.138" level="INFO">Clicking element 'css=.account-setting-active'.</msg>
+<status status="PASS" starttime="20250826 11:22:29.135" endtime="20250826 11:22:29.323"/>
 </kw>
-<status status="PASS" starttime="20250825 23:26:08.620" endtime="20250825 23:26:08.836"/>
+<status status="PASS" starttime="20250826 11:22:29.134" endtime="20250826 11:22:29.324"/>
 </kw>
 <kw name="Click Register Button in Header" library="header">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${REGISTER_BTN_HEADER}</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20250826 11:22:29.324" endtime="20250826 11:22:29.407"/>
+</kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${REGISTER_BTN_HEADER}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20250825 23:26:08.837" level="INFO">Clicking button 'xpath=(//a[normalize-space()='Register'])[1]'.</msg>
-<msg timestamp="20250825 23:26:09.172" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20250825 23:26:09.176" level="FAIL">Button with locator 'xpath=(//a[normalize-space()='Register'])[1]' not found.</msg>
-<status status="FAIL" starttime="20250825 23:26:08.837" endtime="20250825 23:26:09.184"/>
+<msg timestamp="20250826 11:22:29.408" level="INFO">Clicking button 'xpath=//div[@class="account-dropdown active"]/ul/li[2]'.</msg>
+<msg timestamp="20250826 11:22:29.699" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20250826 11:22:29.699" level="FAIL">Button with locator 'xpath=//div[@class="account-dropdown active"]/ul/li[2]' not found.</msg>
+<status status="FAIL" starttime="20250826 11:22:29.407" endtime="20250826 11:22:29.703"/>
 </kw>
-<status status="FAIL" starttime="20250825 23:26:08.836" endtime="20250825 23:26:09.185"/>
+<status status="FAIL" starttime="20250826 11:22:29.324" endtime="20250826 11:22:29.703"/>
 </kw>
 <kw name="Enter Username" library="register">
 <arg>${userName}</arg>
-<status status="NOT RUN" starttime="20250825 23:26:09.185" endtime="20250825 23:26:09.186"/>
+<status status="NOT RUN" starttime="20250826 11:22:29.704" endtime="20250826 11:22:29.704"/>
 </kw>
-<kw name="Enter Password">
+<kw name="Enter Password" library="register">
 <arg>${password}</arg>
-<status status="NOT RUN" starttime="20250825 23:26:09.187" endtime="20250825 23:26:09.187"/>
+<status status="NOT RUN" starttime="20250826 11:22:29.704" endtime="20250826 11:22:29.704"/>
 </kw>
-<kw name="Enter Email">
+<kw name="Enter Email" library="register">
 <arg>${email}</arg>
-<status status="NOT RUN" starttime="20250825 23:26:09.188" endtime="20250825 23:26:09.188"/>
+<status status="NOT RUN" starttime="20250826 11:22:29.704" endtime="20250826 11:22:29.704"/>
 </kw>
 <kw name="Select Gender" library="register">
 <arg>${gender}</arg>
-<status status="NOT RUN" starttime="20250825 23:26:09.188" endtime="20250825 23:26:09.191"/>
+<status status="NOT RUN" starttime="20250826 11:22:29.705" endtime="20250826 11:22:29.705"/>
 </kw>
 <kw name="Enter First Address" library="register">
 <arg>${FIRST_ADDRESS}</arg>
-<status status="NOT RUN" starttime="20250825 23:26:09.191" endtime="20250825 23:26:09.191"/>
+<status status="NOT RUN" starttime="20250826 11:22:29.705" endtime="20250826 11:22:29.705"/>
 </kw>
 <kw name="Enter Second Address" library="register">
 <arg>${SECOND_ADDRESS}</arg>
-<status status="NOT RUN" starttime="20250825 23:26:09.193" endtime="20250825 23:26:09.193"/>
+<status status="NOT RUN" starttime="20250826 11:22:29.705" endtime="20250826 11:22:29.705"/>
 </kw>
 <kw name="Enter Contact Number" library="register">
 <arg>${contact}</arg>
-<status status="NOT RUN" starttime="20250825 23:26:09.193" endtime="20250825 23:26:09.193"/>
+<status status="NOT RUN" starttime="20250826 11:22:29.705" endtime="20250826 11:22:29.705"/>
 </kw>
 <kw name="Click Register Button" library="register">
-<status status="NOT RUN" starttime="20250825 23:26:09.193" endtime="20250825 23:26:09.193"/>
+<status status="NOT RUN" starttime="20250826 11:22:29.705" endtime="20250826 11:22:29.705"/>
 </kw>
 <kw name="Verify Products Page Title">
 <arg>${products}</arg>
-<status status="NOT RUN" starttime="20250825 23:26:09.247" endtime="20250825 23:26:09.247"/>
+<status status="NOT RUN" starttime="20250826 11:22:29.714" endtime="20250826 11:22:29.714"/>
 </kw>
 <kw name="Verify Toast Message">
 <arg>${successMessage}</arg>
-<status status="NOT RUN" starttime="20250825 23:26:09.295" endtime="20250825 23:26:09.295"/>
+<status status="NOT RUN" starttime="20250826 11:22:29.722" endtime="20250826 11:22:29.722"/>
 </kw>
 <kw name="Click Profile Icon" library="header">
-<status status="NOT RUN" starttime="20250825 23:26:09.297" endtime="20250825 23:26:09.297"/>
+<status status="NOT RUN" starttime="20250826 11:22:29.722" endtime="20250826 11:22:29.722"/>
 </kw>
 <kw name="Click Logout Button" library="header">
-<status status="NOT RUN" starttime="20250825 23:26:09.297" endtime="20250825 23:26:09.297"/>
+<status status="NOT RUN" starttime="20250826 11:22:29.722" endtime="20250826 11:22:29.722"/>
 </kw>
-<status status="FAIL" starttime="20250825 23:26:08.614" endtime="20250825 23:26:09.297"/>
+<status status="FAIL" starttime="20250826 11:22:29.132" endtime="20250826 11:22:29.722"/>
 </kw>
-<status status="FAIL" starttime="20250825 23:26:08.612" endtime="20250825 23:26:09.307">Button with locator 'xpath=(//a[normalize-space()='Register'])[1]' not found.</status>
+<status status="FAIL" starttime="20250826 11:22:29.130" endtime="20250826 11:22:29.723">Button with locator 'xpath=//div[@class="account-dropdown active"]/ul/li[2]' not found.</status>
 </test>
-<test id="s1-s1-s1-t2" name="Verify Two Products Are Purchased Successfully" line="24">
+<test id="s1-t2" name="Verify Two Products Are Purchased Successfully" line="24">
 <kw name="Purchase Products Template">
 <arg>regression.testing08@gmail.com</arg>
 <arg>Heb@@2022</arg>
@@ -117,166 +121,169 @@
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${PROFILE_ICON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20250825 23:26:09.330" level="INFO">Clicking element 'css=button.account-setting-active'.</msg>
-<status status="PASS" starttime="20250825 23:26:09.324" endtime="20250825 23:26:09.475"/>
+<msg timestamp="20250826 11:22:29.730" level="INFO">Clicking element 'css=.account-setting-active'.</msg>
+<status status="PASS" starttime="20250826 11:22:29.729" endtime="20250826 11:22:29.850"/>
 </kw>
-<status status="PASS" starttime="20250825 23:26:09.324" endtime="20250825 23:26:09.475"/>
+<status status="PASS" starttime="20250826 11:22:29.728" endtime="20250826 11:22:29.850"/>
 </kw>
 <kw name="Click Login Button" library="header">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${LOGIN_BTN}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20250825 23:26:09.475" level="INFO">Clicking element 'css=button[class='w-100 my-3 submit-btn']'.</msg>
-<msg timestamp="20250825 23:26:09.723" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20250825 23:26:09.723" level="FAIL">Element with locator 'css=button[class='w-100 my-3 submit-btn']' not found.</msg>
-<status status="FAIL" starttime="20250825 23:26:09.475" endtime="20250825 23:26:09.723"/>
+<msg timestamp="20250826 11:22:29.852" level="INFO">Clicking element 'css=a[href='/login']'.</msg>
+<status status="PASS" starttime="20250826 11:22:29.851" endtime="20250826 11:22:30.009"/>
 </kw>
-<status status="FAIL" starttime="20250825 23:26:09.475" endtime="20250825 23:26:09.723"/>
+<status status="PASS" starttime="20250826 11:22:29.851" endtime="20250826 11:22:30.009"/>
 </kw>
-<kw name="Enter Login Email">
+<kw name="Enter Login Email" library="LoginPage">
 <arg>${email}</arg>
-<status status="NOT RUN" starttime="20250825 23:26:09.741" endtime="20250825 23:26:09.741"/>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAIL_INPUT}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20250826 11:22:30.014" level="INFO">Typing text 'regression.testing08@gmail.com' into text field 'css=input[name='email']'.</msg>
+<msg timestamp="20250826 11:22:30.272" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20250826 11:22:30.272" level="FAIL">Element with locator 'css=input[name='email']' not found.</msg>
+<status status="FAIL" starttime="20250826 11:22:30.011" endtime="20250826 11:22:30.274"/>
 </kw>
-<kw name="Enter Login Password">
+<status status="FAIL" starttime="20250826 11:22:30.010" endtime="20250826 11:22:30.274"/>
+</kw>
+<kw name="Enter Login Password" library="LoginPage">
 <arg>${password}</arg>
-<status status="NOT RUN" starttime="20250825 23:26:09.772" endtime="20250825 23:26:09.772"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.276" endtime="20250826 11:22:30.276"/>
 </kw>
-<kw name="Click Login" library="LoginPage">
-<status status="NOT RUN" starttime="20250825 23:26:09.772" endtime="20250825 23:26:09.772"/>
+<kw name="Click Login in login page" library="LoginPage">
+<status status="NOT RUN" starttime="20250826 11:22:30.276" endtime="20250826 11:22:30.277"/>
 </kw>
 <kw name="Click Profile Icon" library="header">
-<status status="NOT RUN" starttime="20250825 23:26:09.774" endtime="20250825 23:26:09.774"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.277" endtime="20250826 11:22:30.277"/>
 </kw>
 <kw name="Logout Button Should Be Visible" library="header">
-<status status="NOT RUN" starttime="20250825 23:26:09.774" endtime="20250825 23:26:09.774"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.277" endtime="20250826 11:22:30.277"/>
 </kw>
 <kw name="Click Products Tab" library="header">
-<status status="NOT RUN" starttime="20250825 23:26:09.774" endtime="20250825 23:26:09.774"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.277" endtime="20250826 11:22:30.277"/>
 </kw>
 <kw name="Select Category" library="Products">
 <arg>${keyboard}</arg>
-<status status="NOT RUN" starttime="20250825 23:26:09.779" endtime="20250825 23:26:09.780"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.278" endtime="20250826 11:22:30.278"/>
 </kw>
 <kw name="Click Apply" library="Products">
-<status status="NOT RUN" starttime="20250825 23:26:09.780" endtime="20250825 23:26:09.780"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.278" endtime="20250826 11:22:30.278"/>
 </kw>
 <kw name="Verify Product Name" library="Products">
 <arg>${keyboardModel}</arg>
-<status status="NOT RUN" starttime="20250825 23:26:09.782" endtime="20250825 23:26:09.782"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.278" endtime="20250826 11:22:30.278"/>
 </kw>
 <kw name="Select Category" library="Products">
 <arg>${laptop}</arg>
-<status status="NOT RUN" starttime="20250825 23:26:09.784" endtime="20250825 23:26:09.784"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.278" endtime="20250826 11:22:30.279"/>
 </kw>
 <kw name="Click Apply" library="Products">
-<status status="NOT RUN" starttime="20250825 23:26:09.785" endtime="20250825 23:26:09.785"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.279" endtime="20250826 11:22:30.279"/>
 </kw>
 <kw name="Open Product" library="Products">
 <arg>${keyboardModel}</arg>
-<status status="NOT RUN" starttime="20250825 23:26:09.785" endtime="20250825 23:26:09.787"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.279" endtime="20250826 11:22:30.279"/>
 </kw>
 <kw name="Verify Product Name" library="Products">
 <arg>${keyboardModel}</arg>
-<status status="NOT RUN" starttime="20250825 23:26:09.788" endtime="20250825 23:26:09.788"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.279" endtime="20250826 11:22:30.280"/>
 </kw>
 <kw name="Verify Product Price" library="Products">
 <arg>${kPrice}</arg>
-<status status="NOT RUN" starttime="20250825 23:26:09.790" endtime="20250825 23:26:09.791"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.280" endtime="20250826 11:22:30.280"/>
 </kw>
 <kw name="Cart Count Should Be">
 <arg>0</arg>
-<status status="NOT RUN" starttime="20250825 23:26:09.833" endtime="20250825 23:26:09.834"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.291" endtime="20250826 11:22:30.292"/>
 </kw>
 <kw name="Click Add To Cart" library="Products">
-<status status="NOT RUN" starttime="20250825 23:26:09.834" endtime="20250825 23:26:09.834"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.292" endtime="20250826 11:22:30.292"/>
 </kw>
 <kw name="Cart Count Should Be">
 <arg>1</arg>
-<status status="NOT RUN" starttime="20250825 23:26:09.873" endtime="20250825 23:26:09.873"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.303" endtime="20250826 11:22:30.303"/>
 </kw>
 <kw name="Verify Toast Message">
 <arg>${message}</arg>
-<status status="NOT RUN" starttime="20250825 23:26:09.922" endtime="20250825 23:26:09.922"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.312" endtime="20250826 11:22:30.312"/>
 </kw>
 <kw name="Click Products Tab" library="header">
-<status status="NOT RUN" starttime="20250825 23:26:09.922" endtime="20250825 23:26:09.922"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.312" endtime="20250826 11:22:30.312"/>
 </kw>
 <kw name="Select Category" library="Products">
 <arg>${laptop}</arg>
-<status status="NOT RUN" starttime="20250825 23:26:09.922" endtime="20250825 23:26:09.922"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.312" endtime="20250826 11:22:30.312"/>
 </kw>
 <kw name="Click Apply" library="Products">
-<status status="NOT RUN" starttime="20250825 23:26:09.922" endtime="20250825 23:26:09.922"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.312" endtime="20250826 11:22:30.313"/>
 </kw>
 <kw name="Open Product" library="Products">
 <arg>${laptopModel}</arg>
-<status status="NOT RUN" starttime="20250825 23:26:09.922" endtime="20250825 23:26:09.922"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.313" endtime="20250826 11:22:30.313"/>
 </kw>
 <kw name="Click Add To Cart" library="Products">
-<status status="NOT RUN" starttime="20250825 23:26:09.922" endtime="20250825 23:26:09.922"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.313" endtime="20250826 11:22:30.313"/>
 </kw>
 <kw name="Cart Count Should Be">
 <arg>2</arg>
-<status status="NOT RUN" starttime="20250825 23:26:09.991" endtime="20250825 23:26:09.991"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.319" endtime="20250826 11:22:30.319"/>
 </kw>
 <kw name="Click Cart Icon" library="header">
-<status status="NOT RUN" starttime="20250825 23:26:09.991" endtime="20250825 23:26:09.991"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.319" endtime="20250826 11:22:30.319"/>
 </kw>
 <kw name="Click View Cart" library="header">
-<status status="NOT RUN" starttime="20250825 23:26:09.991" endtime="20250825 23:26:09.991"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.320" endtime="20250826 11:22:30.320"/>
 </kw>
 <kw name="Verify Product In Cart">
 <arg>${keyboardModel}</arg>
 <arg>${kPrice}</arg>
-<status status="NOT RUN" starttime="20250825 23:26:10.048" endtime="20250825 23:26:10.048"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.327" endtime="20250826 11:22:30.327"/>
 </kw>
 <kw name="Verify Product In Cart">
 <arg>${laptopModel}</arg>
 <arg>${lPrice}</arg>
-<status status="NOT RUN" starttime="20250825 23:26:10.098" endtime="20250825 23:26:10.098"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.333" endtime="20250826 11:22:30.333"/>
 </kw>
 <kw name="Click Checkout" library="cart">
-<status status="NOT RUN" starttime="20250825 23:26:10.098" endtime="20250825 23:26:10.098"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.334" endtime="20250826 11:22:30.334"/>
 </kw>
 <kw name="Enter Shipping Address" library="cart">
 <arg>${address}</arg>
-<status status="NOT RUN" starttime="20250825 23:26:10.098" endtime="20250825 23:26:10.098"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.334" endtime="20250826 11:22:30.334"/>
 </kw>
 <kw name="Select Country" library="cart">
 <arg>${country}</arg>
-<status status="NOT RUN" starttime="20250825 23:26:10.100" endtime="20250825 23:26:10.100"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.334" endtime="20250826 11:22:30.334"/>
 </kw>
 <kw name="Select Region" library="cart">
 <arg>${region}</arg>
-<status status="NOT RUN" starttime="20250825 23:26:10.102" endtime="20250825 23:26:10.102"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.334" endtime="20250826 11:22:30.334"/>
 </kw>
 <kw name="Enter Phone And Postal" library="cart">
 <arg>${phone}</arg>
 <arg>${code}</arg>
-<status status="NOT RUN" starttime="20250825 23:26:10.102" endtime="20250825 23:26:10.102"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.334" endtime="20250826 11:22:30.334"/>
 </kw>
 <kw name="Click Cash On Delivery" library="cart">
-<status status="NOT RUN" starttime="20250825 23:26:10.102" endtime="20250825 23:26:10.108"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.335" endtime="20250826 11:22:30.335"/>
 </kw>
 <kw name="Click Confirm" library="cart">
-<status status="NOT RUN" starttime="20250825 23:26:10.108" endtime="20250825 23:26:10.108"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.335" endtime="20250826 11:22:30.335"/>
 </kw>
 <kw name="Click Order" library="order">
-<status status="NOT RUN" starttime="20250825 23:26:10.108" endtime="20250825 23:26:10.108"/>
+<status status="NOT RUN" starttime="20250826 11:22:30.335" endtime="20250826 11:22:30.335"/>
 </kw>
-<status status="FAIL" starttime="20250825 23:26:09.317" endtime="20250825 23:26:10.110"/>
+<status status="FAIL" starttime="20250826 11:22:29.727" endtime="20250826 11:22:30.335"/>
 </kw>
-<status status="FAIL" starttime="20250825 23:26:09.311" endtime="20250825 23:26:10.110">Element with locator 'css=button[class='w-100 my-3 submit-btn']' not found.</status>
+<status status="FAIL" starttime="20250826 11:22:29.725" endtime="20250826 11:22:30.336">Element with locator 'css=input[name='email']' not found.</status>
 </test>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20250825 23:26:10.119" endtime="20250825 23:26:12.425"/>
+<status status="PASS" starttime="20250826 11:22:30.337" endtime="20250826 11:22:32.770"/>
 </kw>
-<status status="FAIL" starttime="20250825 23:25:54.224" endtime="20250825 23:26:12.426"/>
-</suite>
-<status status="FAIL" starttime="20250825 23:25:54.219" endtime="20250825 23:26:12.437"/>
-</suite>
-<status status="FAIL" starttime="20250825 23:25:54.143" endtime="20250825 23:26:12.444"/>
+<status status="FAIL" starttime="20250826 11:22:16.599" endtime="20250826 11:22:32.770"/>
 </suite>
 <statistics>
 <total>
@@ -285,9 +292,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="2" skip="0" id="s1" name="RobotFramework">RobotFramework</stat>
-<stat pass="0" fail="2" skip="0" id="s1-s1" name="ShopTest">RobotFramework.ShopTest</stat>
-<stat pass="0" fail="2" skip="0" id="s1-s1-s1" name="Shop">RobotFramework.ShopTest.Shop</stat>
+<stat pass="0" fail="2" skip="0" id="s1" name="Shop">Shop</stat>
 </suite>
 </statistics>
 <errors>
