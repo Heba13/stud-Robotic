@@ -3,12 +3,12 @@ Library    SeleniumLibrary
 Library    Collections
 
 *** Variables ***
-${ORDER_BTN}          css=button[variant='link']
-${ORDER_ID_ELEMENT}   xpath=//h3[@class='panel-title'][1]
+${ORDER_BTN}          css:button[variant='link']
+${ORDER_ID_ELEMENT}   xpath://h3[@class='panel-title'][1]
 
 *** Keywords ***
 Click Order
-    Click Button    ${ORDER_BTN}
+    Click Element    ${ORDER_BTN}
 
 Verify Shipping And Total
     [Arguments]    ${address}    ${total}
