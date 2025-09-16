@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="292a9f0e-c292-4948-8f2b-278ceb3c17ad" name="Changes" comment="final">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShopTest/resources/pages/LoginPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/ShopTest/resources/pages/LoginPage.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShopTest/resources/pages/Products.robot" beforeDir="false" afterPath="$PROJECT_DIR$/ShopTest/resources/pages/Products.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShopTest/resources/pages/header.robot" beforeDir="false" afterPath="$PROJECT_DIR$/ShopTest/resources/pages/header.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShopTest/resources/pages/order.robot" beforeDir="false" afterPath="$PROJECT_DIR$/ShopTest/resources/pages/order.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShopTest/resources/pages/register.robot" beforeDir="false" afterPath="$PROJECT_DIR$/ShopTest/resources/pages/register.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShopTest/resources/variables.robot" beforeDir="false" afterPath="$PROJECT_DIR$/ShopTest/resources/variables.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShopTest/shop.robot" beforeDir="false" afterPath="$PROJECT_DIR$/ShopTest/shop.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-screenshot-2.png" beforeDir="false" />
-    </list>
+    <list default="true" id="292a9f0e-c292-4948-8f2b-278ceb3c17ad" name="Changes" comment="edit scenarios and locators" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -277,7 +262,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756196863182</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="edit scenarios and locators">
+      <option name="closed" value="true" />
+      <created>1758015029432</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1758015029433</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -297,6 +290,7 @@
     <MESSAGE value="edite" />
     <MESSAGE value="edit" />
     <MESSAGE value="final" />
-    <option name="LAST_COMMIT_MESSAGE" value="final" />
+    <MESSAGE value="edit scenarios and locators" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit scenarios and locators" />
   </component>
 </project>

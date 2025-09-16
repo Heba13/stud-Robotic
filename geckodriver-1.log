@@ -1,0 +1,25 @@
+1758012673509	geckodriver	INFO	Listening on 127.0.0.1:63878
+1758012674190	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63879" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\EmamH\\AppData\\Local\\Temp\\rust_mozprofileqDwII7"
+console.error: GPOParser.jsm: 
+  Unable to parse JSON for ExtensionSettings
+1758012676830	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1758012676841	Marionette	INFO	Listening on port 62294
+console.error: Policies.jsm: 
+  OfferToSaveLoginsDefault ignored because OfferToSaveLogins is present.
+Read port: 62294
+WebDriver BiDi listening on ws://127.0.0.1:63879
+1758012677190	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\EmamH\\AppData\\Local\\Temp\\rust_mozprofileqDwII7\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:63879/devtools/browser/710d2857-40e7-4838-acc4-ed00a65af71b
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping) using 'remote-settings.content-signature.mozilla.org-2025-10-19-08-10-44.chain'
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping) using 'remote-settings.content-signature.mozilla.org-2025-10-19-08-10-44.chain'
+console.error: (new InvalidSignatureError("Invalid content signature (main/query-stripping) using 'remote-settings.content-signature.mozilla.org-2025-10-19-08-10-44.chain'", "resource://services-settings/RemoteSettingsClient.jsm", 174))
+1758012687039	Marionette	INFO	Stopped listening on port 62294
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function

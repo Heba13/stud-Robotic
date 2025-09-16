@@ -15,15 +15,15 @@ Test Setup    Open Browser  ${BASE_URL}    ${BROWSER}
 
 User Can Sign Up New User Account
     [Template]    Sign Up Template
-    Admin    Admn@123    digital.testing1005@gmail.com    female    Giza   Zayed   0101182335    Congratulations Your account has been created
+    Admin    Admn@123    digital.testing1206@gmail.com    female    Giza   Zayed   0101182335    Congratulations Your account has been created
 
 Verify Two Products Are Purchased Successfully
     [Template]    Purchase Products Template
-    digital.testing1005@gmail.com    Admn@123   keyboard   Wireless Keyboard    Chromebook    33
+    digital.testing1206@gmail.com    Admn@123   keyboard   Wireless Keyboard    Chromebook    33
 
 Verify User Can Add To Cart Successfully
     [Template]    Verify User Can Add To Cart
-    digital.testing1005@gmail.com    Admn@123   keyboard   Wireless Keyboard    Added To Cart
+    digital.testing1206@gmail.com    Admn@123   keyboard   Wireless Keyboard    Added To Cart
 
 *** Keywords ***
 
